@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ItemController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public int curState = Constants.STATE_OUT_CONVEYOR;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public void ChangeState(int newState)
+	{
+		curState = newState;
+	}
 }
